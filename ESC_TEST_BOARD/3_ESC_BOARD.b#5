@@ -627,7 +627,7 @@ design rules under a new name.</description>
 <element name="C6" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="-6.858" y="-163.068">
 <attribute name="PROD_ID" value="CAP-00810" x="-6.858" y="-163.068" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U1" library="12v_to_5v_linreg" package="MP04A-M" value="LM340MPX-5.0/NOPBMP04A-M" x="-3.7" y="-169.9">
+<element name="12V-TO-5V" library="12v_to_5v_linreg" package="MP04A-M" value="LM340MPX-5.0/NOPBMP04A-M" x="-3.7" y="-169.9">
 <attribute name="MANUFACTURER_PART_NUMBER" value="LM340MPX5.0NOPB" x="-3.7" y="-169.9" size="1.778" layer="27" display="off"/>
 <attribute name="VENDOR" value="National Semiconductor" x="-3.7" y="-169.9" size="1.778" layer="27" display="off"/>
 </element>
@@ -665,8 +665,8 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
-<contactref element="U1" pad="2"/>
-<contactref element="U1" pad="4"/>
+<contactref element="12V-TO-5V" pad="2"/>
+<contactref element="12V-TO-5V" pad="4"/>
 <wire x1="-0.4488" y1="-169.9" x2="-6.9512" y2="-169.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.008" y1="-163.068" x2="-6.9512" y2="-169.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.008" y1="-159.258" x2="-6.008" y2="-163.068" width="0" layer="19" extent="1-1"/>
@@ -714,7 +714,7 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="IP1+"/>
 <contactref element="U$3" pad="IP1+"/>
 <contactref element="U$3" pad="IP2+"/>
-<contactref element="U1" pad="1"/>
+<contactref element="12V-TO-5V" pad="1"/>
 <wire x1="-6.60999375" y1="-123.571" x2="-6.9512" y2="-167.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.60999375" y1="-122.301" x2="-6.60999375" y2="-123.571" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.60999375" y1="-118.237" x2="-6.60999375" y2="-122.301" width="0" layer="19" extent="1-1"/>
@@ -755,7 +755,7 @@ design rules under a new name.</description>
 <contactref element="R1" pad="2"/>
 <contactref element="U$3" pad="VCC"/>
 <contactref element="R3" pad="2"/>
-<contactref element="U1" pad="3"/>
+<contactref element="12V-TO-5V" pad="3"/>
 <contactref element="C4" pad="1"/>
 <contactref element="C5" pad="1"/>
 <contactref element="C6" pad="1"/>

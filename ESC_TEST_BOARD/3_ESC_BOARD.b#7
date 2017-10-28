@@ -346,6 +346,43 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="12v_to_5v_linreg">
+<packages>
+<package name="MP04A">
+<smd name="1" x="-3.2004" y="2.3" dx="1.6002" dy="0.8382" layer="1"/>
+<smd name="2" x="-3.2004" y="0" dx="1.6002" dy="0.8382" layer="1"/>
+<smd name="3" x="-3.2004" y="-2.3" dx="1.6002" dy="0.8382" layer="1"/>
+<smd name="4" x="3.2004" y="0" dx="1.6002" dy="3.0988" layer="1"/>
+<wire x1="-1.8542" y1="1.905" x2="-1.8542" y2="2.6924" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="2.6924" x2="-3.6576" y2="2.6924" width="0.1524" layer="51"/>
+<wire x1="-3.6576" y1="2.6924" x2="-3.6322" y2="1.905" width="0.1524" layer="51"/>
+<wire x1="-3.6322" y1="1.905" x2="-1.8542" y2="1.905" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-0.381" x2="-1.8542" y2="0.4064" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="0.4064" x2="-3.6576" y2="0.4064" width="0.1524" layer="51"/>
+<wire x1="-3.6576" y1="0.4064" x2="-3.6322" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-3.6322" y1="-0.381" x2="-1.8542" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-2.6924" x2="-1.8542" y2="-1.905" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-1.905" x2="-3.6322" y2="-1.905" width="0.1524" layer="51"/>
+<wire x1="-3.6322" y1="-1.905" x2="-3.6322" y2="-2.6924" width="0.1524" layer="51"/>
+<wire x1="-3.6322" y1="-2.6924" x2="-1.8542" y2="-2.6924" width="0.1524" layer="51"/>
+<wire x1="1.8542" y1="1.5494" x2="1.8542" y2="-1.5494" width="0.1524" layer="51"/>
+<wire x1="1.8542" y1="-1.5494" x2="3.6576" y2="-1.5494" width="0.1524" layer="51"/>
+<wire x1="3.6576" y1="-1.5494" x2="3.6322" y2="1.5494" width="0.1524" layer="51"/>
+<wire x1="3.6322" y1="1.5494" x2="1.8542" y2="1.5494" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="-3.3528" x2="1.8542" y2="-3.3528" width="0.1524" layer="51"/>
+<wire x1="1.8542" y1="-3.3528" x2="1.8542" y2="3.3528" width="0.1524" layer="51"/>
+<wire x1="1.8542" y1="3.3528" x2="-1.8542" y2="3.3528" width="0.1524" layer="51"/>
+<wire x1="-1.8542" y1="3.3528" x2="-1.8542" y2="-3.3528" width="0.1524" layer="51"/>
+<text x="-2.1844" y="1.9558" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="-1.9812" y1="-3.4798" x2="1.9812" y2="-3.4798" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="-3.4798" x2="1.9812" y2="3.4798" width="0.1524" layer="21"/>
+<wire x1="1.9812" y1="3.4798" x2="-1.9812" y2="3.4798" width="0.1524" layer="21"/>
+<wire x1="-1.9812" y1="3.4798" x2="-1.9812" y2="-3.4798" width="0.1524" layer="21"/>
+<text x="-4.0386" y="2.4638" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -576,6 +613,10 @@ design rules under a new name.</description>
 <element name="C6" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="-6.858" y="-163.068">
 <attribute name="PROD_ID" value="CAP-00810" x="-6.858" y="-163.068" size="1.778" layer="27" display="off"/>
 </element>
+<element name="12V-TO-5V-LINREG" library="12v_to_5v_linreg" package="MP04A" value="LM340MPX-5.0/NOPB" x="-14.478" y="-159.258">
+<attribute name="MANUFACTURER_PART_NUMBER" value="LM340MPX5.0NOPB" x="-14.478" y="-159.258" size="1.778" layer="27" display="off"/>
+<attribute name="VENDOR" value="National Semiconductor" x="-14.478" y="-159.258" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="PWM1">
@@ -607,7 +648,11 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
-<wire x1="-6.008" y1="-159.258" x2="-6.008" y2="-163.068" width="0" layer="19" extent="1-1"/>
+<contactref element="12V-TO-5V-LINREG" pad="2"/>
+<contactref element="12V-TO-5V-LINREG" pad="4"/>
+<wire x1="-11.2776" y1="-159.258" x2="-17.6784" y2="-159.258" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.008" y1="-159.258" x2="-11.2776" y2="-159.258" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.008" y1="-163.068" x2="-6.008" y2="-159.258" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.008" y1="-155.448" x2="-6.008" y2="-159.258" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.708" y1="-151.638" x2="-6.008" y2="-155.448" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.708" y1="-147.828" x2="-7.708" y2="-151.638" width="0" layer="19" extent="1-1"/>
@@ -652,7 +697,9 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="IP1+"/>
 <contactref element="U$3" pad="IP1+"/>
 <contactref element="U$3" pad="IP2+"/>
-<wire x1="-6.60999375" y1="-123.571" x2="-6.60999375" y2="-122.301" width="0" layer="19" extent="1-1"/>
+<contactref element="12V-TO-5V-LINREG" pad="1"/>
+<wire x1="-6.60999375" y1="-123.571" x2="-17.6784" y2="-156.958" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.60999375" y1="-122.301" x2="-6.60999375" y2="-123.571" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.60999375" y1="-118.237" x2="-6.60999375" y2="-122.301" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.60999375" y1="-116.967" x2="-6.60999375" y2="-118.237" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.60999375" y1="-112.903" x2="-6.60999375" y2="-116.967" width="0" layer="19" extent="1-1"/>
@@ -684,30 +731,30 @@ design rules under a new name.</description>
 <contactref element="C3" pad="2"/>
 <wire x1="-1.01000625" y1="-123.571" x2="-6.008" y2="-151.638" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$1">
+<signal name="+5V">
 <contactref element="U$1" pad="VCC"/>
 <contactref element="R2" pad="2"/>
-<wire x1="-1.01000625" y1="-111.633" x2="-6.008" y2="-132.588" width="0" layer="19" extent="1-1"/>
+<contactref element="U$2" pad="VCC"/>
+<contactref element="R1" pad="2"/>
+<contactref element="U$3" pad="VCC"/>
+<contactref element="R3" pad="2"/>
+<contactref element="12V-TO-5V-LINREG" pad="3"/>
+<wire x1="-6.008" y1="-136.398" x2="-17.6784" y2="-161.558" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.008" y1="-132.588" x2="-6.008" y2="-136.398" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.008" y1="-128.778" x2="-6.008" y2="-132.588" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.01000625" y1="-122.301" x2="-6.008" y2="-128.778" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.01000625" y1="-116.967" x2="-1.01000625" y2="-122.301" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.01000625" y1="-111.633" x2="-1.01000625" y2="-116.967" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U$1" pad="FAULT"/>
 <contactref element="R2" pad="1"/>
 <wire x1="-1.01000625" y1="-114.173" x2="-7.708" y2="-132.588" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$3">
-<contactref element="U$2" pad="VCC"/>
-<contactref element="R1" pad="2"/>
-<wire x1="-1.01000625" y1="-116.967" x2="-6.008" y2="-128.778" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$4">
 <contactref element="U$2" pad="FAULT"/>
 <contactref element="R1" pad="1"/>
 <wire x1="-1.01000625" y1="-119.507" x2="-7.708" y2="-128.778" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$5">
-<contactref element="U$3" pad="VCC"/>
-<contactref element="R3" pad="2"/>
-<wire x1="-1.01000625" y1="-122.301" x2="-6.008" y2="-136.398" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="U$3" pad="FAULT"/>

@@ -1469,6 +1469,32 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package3d>
 </packages3d>
 </library>
+<library name="MCP3008">
+<packages>
+<package name="MCP3008">
+<smd name="VDD" x="-4.445" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="VREF" x="-3.175" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="AGND" x="-1.905" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CLK" x="-0.635" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="DOUT" x="0.635" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="DIN" x="1.905" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CS/SHDN" x="3.175" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="DGND" x="4.445" y="2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CH0" x="-4.445" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CH1" x="-3.175" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CH2" x="-1.905" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CH3" x="-0.635" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CH4" x="0.635" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CH5" x="1.905" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CH6" x="3.175" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<smd name="CH7" x="4.445" y="-2.7" dx="0.6" dy="1.5" layer="1"/>
+<wire x1="-4.745" y1="1.65" x2="4.745" y2="1.65" width="0.127" layer="21"/>
+<wire x1="4.745" y1="1.65" x2="4.745" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="4.745" y1="-1.65" x2="-4.745" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-4.745" y1="-1.65" x2="-4.745" y2="1.65" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1712,6 +1738,13 @@ design rules under a new name.</description>
 <element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="-8.6" y="-265.5"/>
 <element name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="-8.6" y="-269.8"/>
 <element name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="" x="-8.6" y="-274.1"/>
+<element name="U$4" library="MCP3008" package="MCP3008" value="MCP3008" x="-15" y="-270.7"/>
+<element name="TO-MICRO" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA04-1" package3d_urn="urn:adsk.eagle:package:8337/1" value="" x="-8.4" y="-283.6">
+<attribute name="MF" value="" x="-8.4" y="-283.6" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-8.4" y="-283.6" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="-8.4" y="-283.6" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-8.4" y="-283.6" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="PWM1">
@@ -1742,6 +1775,8 @@ design rules under a new name.</description>
 <contactref element="R5" pad="1"/>
 <contactref element="R7" pad="1"/>
 <contactref element="R9" pad="1"/>
+<contactref element="U$4" pad="DGND"/>
+<contactref element="U$4" pad="AGND"/>
 <wire x1="-0.4488" y1="-169.9" x2="-6.9512" y2="-169.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.008" y1="-163.068" x2="-6.9512" y2="-169.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.008" y1="-159.258" x2="-6.008" y2="-163.068" width="0" layer="19" extent="1-1"/>
@@ -1754,7 +1789,9 @@ design rules under a new name.</description>
 <wire x1="-1.01000625" y1="-115.443" x2="-1.01000625" y2="-120.777" width="0" layer="19" extent="1-1"/>
 <wire x1="-9.45" y1="-256.9" x2="-6.9512" y2="-169.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-9.45" y1="-265.5" x2="-9.45" y2="-256.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-9.45" y1="-274.1" x2="-9.45" y2="-265.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.555" y1="-268" x2="-9.45" y2="-265.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.45" y1="-274.1" x2="-10.555" y2="-268" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.905" y1="-268" x2="-10.555" y2="-268" width="0" layer="19" extent="1-1"/>
 <wire x1="17.526" y1="-28.194" x2="-1.01000625" y2="-115.443" width="0" layer="19" extent="1-1"/>
 <wire x1="48.66" y1="4.19" x2="17.526" y2="-28.194" width="0" layer="19" extent="1-1"/>
 <wire x1="49.66" y1="8.19" x2="48.66" y2="4.19" width="0" layer="19" extent="1-1"/>
@@ -1794,17 +1831,23 @@ design rules under a new name.</description>
 <signal name="ANALOG_1">
 <contactref element="U$1" pad="VIOUT"/>
 <contactref element="C1" pad="2"/>
+<contactref element="U$4" pad="CH1"/>
 <wire x1="-1.01000625" y1="-112.903" x2="-6.008" y2="-144.018" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.175" y1="-273.4" x2="-6.008" y2="-144.018" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ANALOG_2">
 <contactref element="U$2" pad="VIOUT"/>
 <contactref element="C2" pad="2"/>
+<contactref element="U$4" pad="CH2"/>
 <wire x1="-1.01000625" y1="-118.237" x2="-6.008" y2="-147.828" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.905" y1="-273.4" x2="-6.008" y2="-147.828" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ANALOG_3">
 <contactref element="U$3" pad="VIOUT"/>
 <contactref element="C3" pad="2"/>
+<contactref element="U$4" pad="CH3"/>
 <wire x1="-1.01000625" y1="-123.571" x2="-6.008" y2="-151.638" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.635" y1="-273.4" x2="-6.008" y2="-151.638" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U$1" pad="VCC"/>
@@ -1820,6 +1863,8 @@ design rules under a new name.</description>
 <contactref element="R4" pad="2"/>
 <contactref element="R6" pad="2"/>
 <contactref element="R8" pad="2"/>
+<contactref element="U$4" pad="VDD"/>
+<contactref element="U$4" pad="VREF"/>
 <wire x1="-7.708" y1="-163.068" x2="-6.9512" y2="-172.2" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.708" y1="-159.258" x2="-7.708" y2="-163.068" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.708" y1="-155.448" x2="-7.708" y2="-159.258" width="0" layer="19" extent="1-1"/>
@@ -1832,6 +1877,8 @@ design rules under a new name.</description>
 <wire x1="-7.75" y1="-252.6" x2="-6.9512" y2="-172.2" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.75" y1="-261.2" x2="-7.75" y2="-252.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.75" y1="-269.8" x2="-7.75" y2="-261.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.175" y1="-268" x2="-7.75" y2="-269.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.445" y1="-268" x2="-18.175" y2="-268" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U$1" pad="FAULT"/>
@@ -1917,17 +1964,35 @@ design rules under a new name.</description>
 <signal name="ANALOG_4">
 <contactref element="R4" pad="1"/>
 <contactref element="R5" pad="2"/>
+<contactref element="U$4" pad="CH4"/>
+<wire x1="-7.75" y1="-256.9" x2="-14.365" y2="-273.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-9.45" y1="-252.6" x2="-7.75" y2="-256.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ANALOG_5">
 <contactref element="R6" pad="1"/>
 <contactref element="R7" pad="2"/>
+<contactref element="U$4" pad="CH5"/>
+<wire x1="-7.75" y1="-265.5" x2="-13.095" y2="-273.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-9.45" y1="-261.2" x2="-7.75" y2="-265.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ANALOG_6">
 <contactref element="R8" pad="1"/>
 <contactref element="R9" pad="2"/>
-<wire x1="-9.45" y1="-269.8" x2="-7.75" y2="-274.1" width="0" layer="19" extent="1-1"/>
+<contactref element="U$4" pad="CH6"/>
+<wire x1="-7.75" y1="-274.1" x2="-11.825" y2="-273.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.45" y1="-269.8" x2="-11.825" y2="-273.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CLK">
+<contactref element="U$4" pad="CLK"/>
+</signal>
+<signal name="DOUT">
+<contactref element="U$4" pad="DOUT"/>
+</signal>
+<signal name="DIN">
+<contactref element="U$4" pad="DIN"/>
+</signal>
+<signal name="CS/SHDN">
+<contactref element="U$4" pad="CS/SHDN"/>
 </signal>
 </signals>
 </board>
