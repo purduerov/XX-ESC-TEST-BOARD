@@ -9983,7 +9983,6 @@ Height: 7.70mm</description>
 <part name="U$4" library="MCP3008" deviceset="MCP3008" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TO-MICRO" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
@@ -10027,13 +10026,9 @@ Height: 7.70mm</description>
 <part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
 <part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
 <part name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
-<part name="JP9" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
-<part name="JP10" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
-<part name="JP11" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
 <part name="JP12" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
 <part name="JP13" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
 <part name="JP14" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
-<part name="JP15" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C21" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
@@ -10113,7 +10108,6 @@ Height: 7.70mm</description>
 <instance part="U$4" gate="G$1" x="335.28" y="101.6"/>
 <instance part="P+9" gate="1" x="358.14" y="116.84"/>
 <instance part="GND20" gate="1" x="373.38" y="76.2"/>
-<instance part="TO-MICRO" gate="1" x="370.84" y="93.98" rot="R180"/>
 <instance part="C7" gate="G$1" x="317.5" y="175.26"/>
 <instance part="GND21" gate="1" x="317.5" y="167.64"/>
 <instance part="C8" gate="G$1" x="337.82" y="175.26"/>
@@ -10165,13 +10159,9 @@ Height: 7.70mm</description>
 <instance part="JP6" gate="G$1" x="40.64" y="200.66" rot="R180"/>
 <instance part="JP7" gate="G$1" x="40.64" y="190.5" rot="R180"/>
 <instance part="JP8" gate="G$1" x="40.64" y="180.34" rot="R180"/>
-<instance part="JP9" gate="G$1" x="40.64" y="170.18" rot="R180"/>
-<instance part="JP10" gate="G$1" x="40.64" y="160.02" rot="R180"/>
-<instance part="JP11" gate="G$1" x="66.04" y="200.66" rot="R180"/>
 <instance part="JP12" gate="G$1" x="66.04" y="190.5" rot="R180"/>
 <instance part="JP13" gate="G$1" x="66.04" y="180.34" rot="R180"/>
 <instance part="JP14" gate="G$1" x="66.04" y="170.18" rot="R180"/>
-<instance part="JP15" gate="G$1" x="66.04" y="160.02" rot="R180"/>
 <instance part="P+10" gate="1" x="88.9" y="208.28"/>
 <instance part="GND34" gate="1" x="86.36" y="152.4"/>
 <instance part="C21" gate="G$1" x="236.22" y="160.02"/>
@@ -10432,12 +10422,7 @@ Height: 7.70mm</description>
 <wire x1="68.58" y1="170.18" x2="86.36" y2="170.18" width="0.1524" layer="91"/>
 <label x="73.66" y="170.18" size="1.778" layer="95"/>
 <pinref part="GND34" gate="1" pin="GND"/>
-<wire x1="86.36" y1="170.18" x2="86.36" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="JP15" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="160.02" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="160.02" x2="86.36" y2="160.02" width="0.1524" layer="91"/>
-<label x="73.66" y="160.02" size="1.778" layer="95"/>
-<junction x="86.36" y="160.02"/>
+<wire x1="86.36" y1="170.18" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -10685,16 +10670,11 @@ Height: 7.70mm</description>
 <wire x1="459.74" y1="180.34" x2="459.74" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP11" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="200.66" x2="88.9" y2="200.66" width="0.1524" layer="91"/>
-<label x="73.66" y="200.66" size="1.778" layer="95"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
-<wire x1="88.9" y1="200.66" x2="88.9" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="JP12" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="190.5" x2="88.9" y2="190.5" width="0.1524" layer="91"/>
 <label x="73.66" y="190.5" size="1.778" layer="95"/>
-<wire x1="88.9" y1="190.5" x2="88.9" y2="200.66" width="0.1524" layer="91"/>
-<junction x="88.9" y="200.66"/>
+<wire x1="88.9" y1="190.5" x2="88.9" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -10930,20 +10910,12 @@ Height: 7.70mm</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="CS/SHDN"/>
 <wire x1="350.52" y1="91.44" x2="363.22" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="TO-MICRO" gate="1" pin="4"/>
 <label x="360.68" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U$1" pin="PB2(SS/OC1B)"/>
 <wire x1="523.24" y1="106.68" x2="535.94" y2="106.68" width="0.1524" layer="91"/>
 <label x="528.32" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IN" class="0">
-<segment>
-<pinref part="U2" gate="U$1" pin="PD1(TXD)"/>
-<wire x1="523.24" y1="132.08" x2="543.56" y2="132.08" width="0.1524" layer="91"/>
-<label x="538.48" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -10981,7 +10953,6 @@ Height: 7.70mm</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="DIN"/>
 <wire x1="350.52" y1="93.98" x2="363.22" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="TO-MICRO" gate="1" pin="3"/>
 <label x="355.6" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -10999,7 +10970,6 @@ Height: 7.70mm</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="DOUT"/>
 <wire x1="350.52" y1="96.52" x2="363.22" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="TO-MICRO" gate="1" pin="2"/>
 <label x="355.6" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -11017,7 +10987,6 @@ Height: 7.70mm</description>
 <segment>
 <pinref part="U$4" gate="G$1" pin="CLK"/>
 <wire x1="350.52" y1="99.06" x2="363.22" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="TO-MICRO" gate="1" pin="1"/>
 <label x="355.6" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -11041,20 +11010,6 @@ Height: 7.70mm</description>
 <wire x1="467.36" y1="165.1" x2="467.36" y2="170.18" width="0.1524" layer="91"/>
 <junction x="467.36" y="165.1"/>
 <label x="449.58" y="165.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="JP9" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="170.18" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
-<label x="48.26" y="170.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="JP10" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="160.02" x2="53.34" y2="160.02" width="0.1524" layer="91"/>
-<label x="48.26" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
