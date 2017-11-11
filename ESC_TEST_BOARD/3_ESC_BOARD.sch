@@ -10658,11 +10658,6 @@ W = angled&lt;p&gt;
 <label x="66.04" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="111.76" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
-<label x="76.2" y="116.84" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="CH1"/>
 <wire x1="325.12" y1="104.14" x2="317.5" y2="104.14" width="0.1524" layer="91"/>
 <label x="307.34" y="104.14" size="1.778" layer="95"/>
@@ -10671,6 +10666,11 @@ W = angled&lt;p&gt;
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="200.66" x2="27.94" y2="200.66" width="0.1524" layer="91"/>
 <label x="22.86" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="111.76" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
+<label x="63.5" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ANALOG_2" class="0">
