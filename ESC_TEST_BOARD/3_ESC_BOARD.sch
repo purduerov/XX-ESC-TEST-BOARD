@@ -559,6 +559,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+12V" urn="urn:adsk.eagle:component:26959/1" prefix="P+" library_version="1">
@@ -578,6 +583,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -8150,6 +8168,9 @@ Source: AVX .. aphvc.pdf</description>
 <text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
 <text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
 </symbol>
+<symbol name="LETTER_L" urn="urn:adsk.eagle:symbol:13870/1" library_version="1">
+<frame x1="0" y1="0" x2="248.92" y2="185.42" columns="12" rows="17" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME_A_L" urn="urn:adsk.eagle:component:13939/1" prefix="FRAME" uservalue="yes" library_version="1">
@@ -8157,6 +8178,21 @@ Source: AVX .. aphvc.pdf</description>
 <gates>
 <gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
 <gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LETTER_L" urn="urn:adsk.eagle:component:13920/1" prefix="FRAME" uservalue="yes" library_version="1">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LETTER landscape</description>
+<gates>
+<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="">
@@ -12963,6 +12999,42 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <rectangle x1="2.8234" y1="2.2828" x2="3.0266" y2="3.121" layer="51"/>
 <rectangle x1="2.1734" y1="2.2828" x2="2.3766" y2="3.121" layer="51"/>
 </package>
+<package name="WS2812B">
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-1.6" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.6" x2="-1.6" y2="2.5" width="0.127" layer="21"/>
+<smd name="1-VDD" x="2.45" y="-1.65" dx="1.5" dy="0.9" layer="1" rot="R180"/>
+<smd name="2-DOUT" x="2.45" y="1.65" dx="1.5" dy="0.9" layer="1" rot="R180"/>
+<smd name="4-DIN" x="-2.45" y="-1.65" dx="1.5" dy="0.9" layer="1" rot="R180"/>
+<smd name="3-GND" x="-2.45" y="1.65" dx="1.5" dy="0.9" layer="1" rot="R180"/>
+<circle x="0" y="0" radius="1.7204625" width="0.127" layer="21"/>
+<text x="3.4925" y="1.5875" size="0.8128" layer="25" ratio="10" rot="R270">&gt;NAME</text>
+<wire x1="-1.6" y1="2.5" x2="-1.3" y2="2.8" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="2.8" x2="-1.7" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="3.2" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+</package>
+<package name="WS2812B-NARROW">
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-1.6" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.6" x2="-1.6" y2="2.5" width="0.127" layer="21"/>
+<smd name="1-VDD" x="2.35" y="-1.65" dx="1.3" dy="1.2" layer="1" rot="R180"/>
+<smd name="2-DOUT" x="2.35" y="1.65" dx="1.3" dy="1.2" layer="1" rot="R180"/>
+<smd name="4-DIN" x="-2.35" y="-1.65" dx="1.3" dy="1.2" layer="1" rot="R180"/>
+<smd name="3-GND" x="-2.35" y="1.65" dx="1.3" dy="1.2" layer="1" rot="R180"/>
+<circle x="0" y="0" radius="1.7204625" width="0.127" layer="21"/>
+<text x="3.4925" y="1.5875" size="0.8128" layer="25" ratio="10" rot="R270">&gt;NAME</text>
+<wire x1="-1.6" y1="2.5" x2="-1.25" y2="2.85" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="2.85" x2="-1.7" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="3.3" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PCA9865">
@@ -13013,6 +13085,59 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <pin name="A5" x="-20.32" y="-17.78" length="short"/>
 <pin name="VDD" x="-20.32" y="15.24" length="short" direction="pwr"/>
 </symbol>
+<symbol name="WS2812BLED">
+<pin name="VDD" x="5.08" y="15.24" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="DI" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="GND" x="0" y="-10.16" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="DO" x="12.7" y="-2.54" visible="pad" length="middle" direction="out" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-6.35" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="3.81" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<text x="3.81" y="0" size="1.27" layer="94" rot="R180">WS2812B</text>
+<wire x1="-3.81" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PCA9685" prefix="U" uservalue="yes">
@@ -13053,6 +13178,35 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <connect gate="G$1" pin="SCL" pad="26"/>
 <connect gate="G$1" pin="SDA" pad="27"/>
 <connect gate="G$1" pin="VDD" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WS2812B5050" prefix="LED">
+<gates>
+<gate name="G$1" symbol="WS2812BLED" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="WS2812B">
+<connects>
+<connect gate="G$1" pin="DI" pad="4-DIN"/>
+<connect gate="G$1" pin="DO" pad="2-DOUT"/>
+<connect gate="G$1" pin="GND" pad="3-GND"/>
+<connect gate="G$1" pin="VDD" pad="1-VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-NARROW" package="WS2812B-NARROW">
+<connects>
+<connect gate="G$1" pin="DI" pad="4-DIN"/>
+<connect gate="G$1" pin="DO" pad="2-DOUT"/>
+<connect gate="G$1" pin="GND" pad="3-GND"/>
+<connect gate="G$1" pin="VDD" pad="1-VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13127,6 +13281,34 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <connect gate="G$1" pin="G" pad="G"/>
 <connect gate="G$1" pin="S" pad="S"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="neomatrix-8x8">
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="-1.905" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="GND" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -13304,10 +13486,75 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <part name="R19" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="0R"/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="P+15" library="supply1" deviceset="+5V" device="" value="+5V"/>
+<part name="C25" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
+<part name="C26" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
+<part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP8" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP9" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP10" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP11" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP15" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP16" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP17" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP18" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP19" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP20" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP21" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="JP22" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/1"/>
+<part name="C27" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
+<part name="C29" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
+<part name="GND51" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C30" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="10uF"/>
+<part name="LED1" library="microbuilder" deviceset="WS2812B5050" device="" value="WS2812B5050"/>
+<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="SUPPLY6" library="neomatrix-8x8" deviceset="GND" device="" value="GND"/>
+<part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="LED2" library="microbuilder" deviceset="WS2812B5050" device="" value="WS2812B5050"/>
+<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="SUPPLY7" library="neomatrix-8x8" deviceset="GND" device="" value="GND"/>
+<part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="LED3" library="microbuilder" deviceset="WS2812B5050" device="" value="WS2812B5050"/>
+<part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="SUPPLY8" library="neomatrix-8x8" deviceset="GND" device="" value="GND"/>
+<part name="P+18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND56" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND57" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="632.46" y="58.42" size="1.778" layer="91">Resistor used to bridge
+both sides if it is found
+that a logic level 
+converter is not needed</text>
+<text x="581.66" y="58.42" size="1.778" layer="91">Resistor used to bridge
+both sides if it is found
+that a logic level 
+converter is not needed</text>
+<text x="586.74" y="33.02" size="1.778" layer="91">Sparkfun logic
+level conveter</text>
+<text x="629.92" y="33.02" size="1.778" layer="91">Sparkfun logic
+level conveter</text>
+<text x="683.26" y="200.66" size="1.778" layer="91">PWM, +5V, and GND
+for servo input</text>
+<text x="665.48" y="172.72" size="1.778" layer="91">Blue Robotics 
+pressure sensor
+connector</text>
+<text x="596.9" y="195.58" size="1.778" layer="91">IMU header pin
+connector</text>
+<text x="675.64" y="45.72" size="1.778" layer="91">Resistor to connect raspberry
+pi +5V to main systems +5V.
+Only bridge this if the +12V
+to +5V linear regulator is 
+desoldered</text>
+<text x="944.88" y="190.5" size="2.1844" layer="91">NEO pixels</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="353.06" y="127"/>
@@ -13442,33 +13689,33 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <instance part="GND41" gate="1" x="716.28" y="121.92"/>
 <instance part="FRAME3" gate="G$1" x="563.88" y="0"/>
 <instance part="FRAME3" gate="G$2" x="736.6" y="0"/>
-<instance part="U$5" gate="G$1" x="622.3" y="157.48"/>
-<instance part="SUPPLY2" gate="G$1" x="619.76" y="182.88"/>
-<instance part="GND42" gate="1" x="619.76" y="134.62"/>
-<instance part="C24" gate="G$1" x="632.46" y="180.34" rot="R90"/>
-<instance part="GND43" gate="1" x="640.08" y="175.26"/>
+<instance part="U$5" gate="G$1" x="622.3" y="177.8"/>
+<instance part="SUPPLY2" gate="G$1" x="619.76" y="203.2"/>
+<instance part="GND42" gate="1" x="619.76" y="154.94"/>
+<instance part="C24" gate="G$1" x="632.46" y="200.66" rot="R90"/>
+<instance part="GND43" gate="1" x="640.08" y="195.58"/>
 <instance part="PS" gate="G$1" x="675.64" y="154.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="680.72" y="156.845" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="U4" gate="G$1" x="624.84" y="91.44"/>
-<instance part="C28" gate="G$1" x="591.82" y="116.84"/>
-<instance part="GND45" gate="1" x="591.82" y="109.22"/>
-<instance part="R15" gate="G$1" x="591.82" y="83.82" rot="R90"/>
-<instance part="GND46" gate="1" x="591.82" y="73.66"/>
-<instance part="GND47" gate="1" x="596.9" y="63.5"/>
+<instance part="U4" gate="G$1" x="627.38" y="106.68"/>
+<instance part="C28" gate="G$1" x="594.36" y="132.08"/>
+<instance part="GND45" gate="1" x="594.36" y="124.46"/>
+<instance part="R15" gate="G$1" x="594.36" y="99.06" rot="R90"/>
+<instance part="GND46" gate="1" x="594.36" y="88.9"/>
+<instance part="GND47" gate="1" x="599.44" y="78.74"/>
 <instance part="J5" gate="J$1" x="685.8" y="190.5"/>
 <instance part="GND48" gate="1" x="716.28" y="182.88"/>
 <instance part="P+20" gate="1" x="716.28" y="198.12"/>
-<instance part="R16" gate="G$1" x="668.02" y="106.68" rot="R180"/>
-<instance part="R17" gate="G$1" x="678.18" y="104.14" rot="R180"/>
-<instance part="R18" gate="G$1" x="688.34" y="101.6" rot="R180"/>
-<instance part="U$6" gate="G$1" x="601.98" y="17.78" rot="R270"/>
-<instance part="R21" gate="G$1" x="594.36" y="25.4" rot="R90"/>
-<instance part="R22" gate="G$1" x="609.6" y="25.4" rot="R90"/>
-<instance part="U$7" gate="G$1" x="645.16" y="17.78" rot="R270"/>
-<instance part="R23" gate="G$1" x="637.54" y="25.4" rot="R90"/>
-<instance part="R24" gate="G$1" x="652.78" y="25.4" rot="R90"/>
-<instance part="P+25" gate="1" x="609.6" y="35.56"/>
+<instance part="R16" gate="G$1" x="670.56" y="121.92" rot="R180"/>
+<instance part="R17" gate="G$1" x="680.72" y="119.38" rot="R180"/>
+<instance part="R18" gate="G$1" x="690.88" y="116.84" rot="R180"/>
+<instance part="U$6" gate="G$1" x="594.36" y="7.62" rot="R270"/>
+<instance part="R21" gate="G$1" x="586.74" y="15.24" rot="R90"/>
+<instance part="R22" gate="G$1" x="601.98" y="15.24" rot="R90"/>
+<instance part="U$7" gate="G$1" x="637.54" y="7.62" rot="R270"/>
+<instance part="R23" gate="G$1" x="629.92" y="15.24" rot="R90"/>
+<instance part="R24" gate="G$1" x="645.16" y="15.24" rot="R90"/>
+<instance part="P+25" gate="1" x="601.98" y="25.4"/>
 <instance part="RPI+5V" gate="1" x="680.72" y="27.94" smashed="yes">
 <attribute name="VALUE" x="683.26" y="25.4" size="1.778" layer="96"/>
 </instance>
@@ -13477,17 +13724,62 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <instance part="GND49" gate="1" x="698.5" y="7.62" smashed="yes">
 <attribute name="VALUE" x="695.96" y="5.08" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="594.36" y="33.02"/>
-<instance part="SUPPLY4" gate="G$1" x="637.54" y="33.02"/>
-<instance part="P+21" gate="1" x="652.78" y="35.56"/>
-<instance part="P+22" gate="1" x="599.44" y="132.08"/>
-<instance part="R25" gate="G$1" x="647.7" y="45.72"/>
-<instance part="R26" gate="G$1" x="604.52" y="45.72"/>
+<instance part="SUPPLY1" gate="G$1" x="586.74" y="22.86"/>
+<instance part="SUPPLY4" gate="G$1" x="629.92" y="22.86"/>
+<instance part="P+21" gate="1" x="645.16" y="25.4"/>
+<instance part="P+22" gate="1" x="601.98" y="149.86"/>
+<instance part="R25" gate="G$1" x="640.08" y="50.8"/>
+<instance part="R26" gate="G$1" x="596.9" y="50.8"/>
 <instance part="R19" gate="G$1" x="716.28" y="48.26"/>
 <instance part="SUPPLY5" gate="G$1" x="721.36" y="58.42"/>
 <instance part="P+15" gate="1" x="708.66" y="53.34" smashed="yes">
 <attribute name="VALUE" x="706.12" y="53.34" size="1.778" layer="96"/>
 </instance>
+<instance part="C25" gate="G$1" x="680.72" y="15.24"/>
+<instance part="C26" gate="G$1" x="713.74" y="15.24"/>
+<instance part="GND44" gate="1" x="680.72" y="7.62" smashed="yes">
+<attribute name="VALUE" x="678.18" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="GND50" gate="1" x="713.74" y="7.62" smashed="yes">
+<attribute name="VALUE" x="711.2" y="5.08" size="1.778" layer="96"/>
+</instance>
+<instance part="JP7" gate="G$1" x="675.64" y="83.82"/>
+<instance part="JP8" gate="G$1" x="695.96" y="86.36"/>
+<instance part="JP9" gate="G$1" x="685.8" y="88.9"/>
+<instance part="JP10" gate="G$1" x="675.64" y="114.3"/>
+<instance part="JP11" gate="G$1" x="685.8" y="111.76"/>
+<instance part="JP15" gate="G$1" x="695.96" y="109.22"/>
+<instance part="JP16" gate="G$1" x="675.64" y="106.68"/>
+<instance part="JP17" gate="G$1" x="685.8" y="104.14"/>
+<instance part="JP18" gate="G$1" x="695.96" y="101.6"/>
+<instance part="JP19" gate="G$1" x="675.64" y="99.06"/>
+<instance part="JP20" gate="G$1" x="685.8" y="96.52"/>
+<instance part="JP21" gate="G$1" x="695.96" y="93.98"/>
+<instance part="JP22" gate="G$1" x="675.64" y="91.44"/>
+<instance part="C27" gate="G$1" x="152.4" y="200.66" rot="R180"/>
+<instance part="C29" gate="G$1" x="233.68" y="185.42" rot="R180"/>
+<instance part="GND51" gate="1" x="233.68" y="175.26"/>
+<instance part="C30" gate="G$1" x="226.06" y="185.42" rot="R180"/>
+<instance part="LED1" gate="G$1" x="899.16" y="165.1"/>
+<instance part="C31" gate="G$1" x="911.86" y="180.34"/>
+<instance part="SUPPLY6" gate="GND" x="899.16" y="152.4"/>
+<instance part="P+16" gate="1" x="911.86" y="187.96"/>
+<instance part="GND52" gate="1" x="911.86" y="170.18"/>
+<instance part="GND53" gate="1" x="901.7" y="175.26"/>
+<instance part="FRAME4" gate="G$1" x="853.44" y="12.7"/>
+<instance part="FRAME4" gate="G$2" x="998.22" y="15.24"/>
+<instance part="LED2" gate="G$1" x="955.04" y="165.1"/>
+<instance part="C32" gate="G$1" x="967.74" y="180.34"/>
+<instance part="SUPPLY7" gate="GND" x="955.04" y="152.4"/>
+<instance part="P+17" gate="1" x="967.74" y="187.96"/>
+<instance part="GND54" gate="1" x="967.74" y="170.18"/>
+<instance part="GND55" gate="1" x="957.58" y="175.26"/>
+<instance part="LED3" gate="G$1" x="1010.92" y="165.1"/>
+<instance part="C33" gate="G$1" x="1023.62" y="180.34"/>
+<instance part="SUPPLY8" gate="GND" x="1010.92" y="152.4"/>
+<instance part="P+18" gate="1" x="1023.62" y="187.96"/>
+<instance part="GND56" gate="1" x="1023.62" y="170.18"/>
+<instance part="GND57" gate="1" x="1013.46" y="175.26"/>
 </instances>
 <busses>
 </busses>
@@ -13504,8 +13796,8 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="693.42" y1="101.6" x2="698.5" y2="101.6" width="0.1524" layer="91"/>
-<label x="695.96" y="101.6" size="1.778" layer="95"/>
+<wire x1="695.96" y1="116.84" x2="706.12" y2="116.84" width="0.1524" layer="91"/>
+<label x="698.5" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13579,7 +13871,11 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <pinref part="12V-TO-5V" gate="A" pin="TAB"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="170.18" y1="198.12" x2="160.02" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="198.12" x2="160.02" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="198.12" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="195.58" x2="160.02" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="195.58" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
+<junction x="160.02" y="195.58"/>
 </segment>
 <segment>
 <pinref part="12V-TO-5V" gate="A" pin="GND"/>
@@ -13783,13 +14079,13 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="GND"/>
 <pinref part="GND42" gate="1" pin="GND"/>
-<wire x1="619.76" y1="144.78" x2="619.76" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="619.76" y1="165.1" x2="619.76" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="2"/>
 <pinref part="GND43" gate="1" pin="GND"/>
-<wire x1="635" y1="180.34" x2="640.08" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="640.08" y1="180.34" x2="640.08" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="635" y1="200.66" x2="640.08" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="640.08" y1="200.66" x2="640.08" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GND@9"/>
@@ -13807,52 +14103,52 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <segment>
 <pinref part="C28" gate="G$1" pin="2"/>
 <pinref part="GND45" gate="1" pin="GND"/>
-<wire x1="591.82" y1="114.3" x2="591.82" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="594.36" y1="129.54" x2="594.36" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="GND46" gate="1" pin="GND"/>
-<wire x1="591.82" y1="78.74" x2="591.82" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="594.36" y1="93.98" x2="594.36" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="EXTCLK"/>
 <pinref part="GND47" gate="1" pin="GND"/>
-<wire x1="604.52" y1="88.9" x2="596.9" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="607.06" y1="104.14" x2="599.44" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
-<wire x1="596.9" y1="88.9" x2="596.9" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="596.9" y1="86.36" x2="596.9" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="596.9" y1="83.82" x2="596.9" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="596.9" y1="81.28" x2="596.9" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="596.9" y1="78.74" x2="596.9" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="596.9" y1="76.2" x2="596.9" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="596.9" y1="73.66" x2="596.9" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="596.9" y1="68.58" x2="596.9" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="604.52" y1="68.58" x2="596.9" y2="68.58" width="0.1524" layer="91"/>
-<junction x="596.9" y="68.58"/>
+<wire x1="599.44" y1="104.14" x2="599.44" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="599.44" y1="101.6" x2="599.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="599.44" y1="99.06" x2="599.44" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="599.44" y1="96.52" x2="599.44" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="599.44" y1="93.98" x2="599.44" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="599.44" y1="91.44" x2="599.44" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="599.44" y1="88.9" x2="599.44" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="599.44" y1="83.82" x2="599.44" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="607.06" y1="83.82" x2="599.44" y2="83.82" width="0.1524" layer="91"/>
+<junction x="599.44" y="83.82"/>
 <pinref part="U4" gate="G$1" pin="A0"/>
-<wire x1="604.52" y1="86.36" x2="596.9" y2="86.36" width="0.1524" layer="91"/>
-<label x="599.44" y="86.36" size="1.778" layer="95"/>
-<junction x="596.9" y="86.36"/>
+<wire x1="607.06" y1="101.6" x2="599.44" y2="101.6" width="0.1524" layer="91"/>
+<label x="601.98" y="101.6" size="1.778" layer="95"/>
+<junction x="599.44" y="101.6"/>
 <pinref part="U4" gate="G$1" pin="A1"/>
-<wire x1="604.52" y1="83.82" x2="596.9" y2="83.82" width="0.1524" layer="91"/>
-<label x="599.44" y="83.82" size="1.778" layer="95"/>
-<junction x="596.9" y="83.82"/>
+<wire x1="607.06" y1="99.06" x2="599.44" y2="99.06" width="0.1524" layer="91"/>
+<label x="601.98" y="99.06" size="1.778" layer="95"/>
+<junction x="599.44" y="99.06"/>
 <pinref part="U4" gate="G$1" pin="A2"/>
-<wire x1="604.52" y1="81.28" x2="596.9" y2="81.28" width="0.1524" layer="91"/>
-<label x="599.44" y="81.28" size="1.778" layer="95"/>
-<junction x="596.9" y="81.28"/>
+<wire x1="607.06" y1="96.52" x2="599.44" y2="96.52" width="0.1524" layer="91"/>
+<label x="601.98" y="96.52" size="1.778" layer="95"/>
+<junction x="599.44" y="96.52"/>
 <pinref part="U4" gate="G$1" pin="A3"/>
-<wire x1="604.52" y1="78.74" x2="596.9" y2="78.74" width="0.1524" layer="91"/>
-<label x="599.44" y="78.74" size="1.778" layer="95"/>
-<junction x="596.9" y="78.74"/>
+<wire x1="607.06" y1="93.98" x2="599.44" y2="93.98" width="0.1524" layer="91"/>
+<label x="601.98" y="93.98" size="1.778" layer="95"/>
+<junction x="599.44" y="93.98"/>
 <pinref part="U4" gate="G$1" pin="A4"/>
-<wire x1="604.52" y1="76.2" x2="596.9" y2="76.2" width="0.1524" layer="91"/>
-<label x="599.44" y="76.2" size="1.778" layer="95"/>
-<junction x="596.9" y="76.2"/>
+<wire x1="607.06" y1="91.44" x2="599.44" y2="91.44" width="0.1524" layer="91"/>
+<label x="601.98" y="91.44" size="1.778" layer="95"/>
+<junction x="599.44" y="91.44"/>
 <pinref part="U4" gate="G$1" pin="A5"/>
-<wire x1="604.52" y1="73.66" x2="596.9" y2="73.66" width="0.1524" layer="91"/>
-<label x="599.44" y="73.66" size="1.778" layer="95"/>
-<junction x="596.9" y="73.66"/>
+<wire x1="607.06" y1="88.9" x2="599.44" y2="88.9" width="0.1524" layer="91"/>
+<label x="601.98" y="88.9" size="1.778" layer="95"/>
+<junction x="599.44" y="88.9"/>
 </segment>
 <segment>
 <pinref part="J5" gate="J$1" pin="1"/>
@@ -13864,6 +14160,52 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <pinref part="U$8" gate="G$1" pin="GND"/>
 <wire x1="698.5" y1="10.16" x2="698.5" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND49" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+<wire x1="680.72" y1="12.7" x2="680.72" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="GND50" gate="1" pin="GND"/>
+<wire x1="713.74" y1="12.7" x2="713.74" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND51" gate="1" pin="GND"/>
+<pinref part="C29" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="177.8" x2="233.68" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="180.34" x2="226.06" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="177.8" x2="233.68" y2="177.8" width="0.1524" layer="91"/>
+<junction x="233.68" y="177.8"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="911.86" y1="175.26" x2="911.86" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="GND52" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="967.74" y1="175.26" x2="967.74" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="GND54" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C33" gate="G$1" pin="2"/>
+<wire x1="1023.62" y1="175.26" x2="1023.62" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="GND56" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -13907,6 +14249,12 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <pinref part="P+5" gate="1" pin="+12V"/>
 <wire x1="226.06" y1="190.5" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="190.5" x2="233.68" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="C29" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="187.96" x2="233.68" y2="190.5" width="0.1524" layer="91"/>
+<junction x="233.68" y="190.5"/>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="187.96" x2="226.06" y2="190.5" width="0.1524" layer="91"/>
+<junction x="226.06" y="190.5"/>
 </segment>
 <segment>
 <pinref part="JP13" gate="G$1" pin="1"/>
@@ -13928,8 +14276,8 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="683.26" y1="104.14" x2="698.5" y2="104.14" width="0.1524" layer="91"/>
-<label x="695.96" y="104.14" size="1.778" layer="95"/>
+<wire x1="685.8" y1="119.38" x2="706.12" y2="119.38" width="0.1524" layer="91"/>
+<label x="698.5" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -13944,8 +14292,8 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="673.1" y1="106.68" x2="698.5" y2="106.68" width="0.1524" layer="91"/>
-<label x="695.96" y="106.68" size="1.778" layer="95"/>
+<wire x1="675.64" y1="121.92" x2="706.12" y2="121.92" width="0.1524" layer="91"/>
+<label x="698.5" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ANALOG_1" class="0">
@@ -14046,9 +14394,13 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="160.02" y1="205.74" x2="160.02" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="205.74" x2="160.02" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="12V-TO-5V" gate="A" pin="OUT"/>
+<wire x1="160.02" y1="203.2" x2="160.02" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="200.66" x2="170.18" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="203.2" x2="152.4" y2="203.2" width="0.1524" layer="91"/>
+<junction x="160.02" y="203.2"/>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="+5V"/>
@@ -14140,33 +14492,62 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <wire x1="680.72" y1="20.32" x2="680.72" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="VIN"/>
 <wire x1="688.34" y1="20.32" x2="680.72" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<junction x="680.72" y="20.32"/>
 </segment>
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
 <pinref part="P+25" gate="1" pin="+5V"/>
-<wire x1="609.6" y1="30.48" x2="609.6" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="20.32" x2="601.98" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="P+21" gate="1" pin="+5V"/>
-<wire x1="652.78" y1="30.48" x2="652.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="645.16" y1="20.32" x2="645.16" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+22" gate="1" pin="+5V"/>
-<wire x1="599.44" y1="129.54" x2="599.44" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="147.32" x2="601.98" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="VDD"/>
-<wire x1="599.44" y1="124.46" x2="599.44" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="599.44" y1="106.68" x2="604.52" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="139.7" x2="601.98" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="121.92" x2="607.06" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="591.82" y1="121.92" x2="591.82" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="591.82" y1="124.46" x2="599.44" y2="124.46" width="0.1524" layer="91"/>
-<junction x="599.44" y="124.46"/>
+<wire x1="594.36" y1="137.16" x2="594.36" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="594.36" y1="139.7" x2="601.98" y2="139.7" width="0.1524" layer="91"/>
+<junction x="601.98" y="139.7"/>
 </segment>
 <segment>
 <pinref part="P+15" gate="1" pin="+5V"/>
 <wire x1="708.66" y1="50.8" x2="708.66" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="708.66" y1="48.26" x2="711.2" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="VDD"/>
+<wire x1="904.24" y1="180.34" x2="904.24" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C31" gate="G$1" pin="1"/>
+<wire x1="904.24" y1="182.88" x2="911.86" y2="182.88" width="0.1524" layer="91"/>
+<junction x="911.86" y="182.88"/>
+<pinref part="P+16" gate="1" pin="+5V"/>
+<wire x1="911.86" y1="185.42" x2="911.86" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="VDD"/>
+<wire x1="960.12" y1="180.34" x2="960.12" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="960.12" y1="182.88" x2="967.74" y2="182.88" width="0.1524" layer="91"/>
+<junction x="967.74" y="182.88"/>
+<pinref part="P+17" gate="1" pin="+5V"/>
+<wire x1="967.74" y1="185.42" x2="967.74" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="VDD"/>
+<wire x1="1016" y1="180.34" x2="1016" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C33" gate="G$1" pin="1"/>
+<wire x1="1016" y1="182.88" x2="1023.62" y2="182.88" width="0.1524" layer="91"/>
+<junction x="1023.62" y="182.88"/>
+<pinref part="P+18" gate="1" pin="+5V"/>
+<wire x1="1023.62" y1="185.42" x2="1023.62" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -14519,18 +14900,18 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <label x="528.32" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="650.24" y1="15.24" x2="652.78" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="652.78" y1="15.24" x2="655.32" y2="15.24" width="0.1524" layer="91"/>
-<junction x="652.78" y="15.24"/>
-<label x="655.32" y="15.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="642.62" y1="5.08" x2="645.16" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="645.16" y1="5.08" x2="647.7" y2="5.08" width="0.1524" layer="91"/>
+<junction x="645.16" y="5.08"/>
+<label x="647.7" y="5.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$7" gate="G$1" pin="D"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="652.78" y1="20.32" x2="652.78" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="645.16" y1="10.16" x2="645.16" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="652.78" y1="45.72" x2="660.4" y2="45.72" width="0.1524" layer="91"/>
-<label x="655.32" y="45.72" size="1.778" layer="95"/>
+<wire x1="645.16" y1="50.8" x2="652.78" y2="50.8" width="0.1524" layer="91"/>
+<label x="647.7" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="513.08" y1="66.04" x2="525.78" y2="66.04" width="0.1524" layer="91"/>
@@ -14545,18 +14926,18 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <wire x1="523.24" y1="144.78" x2="551.18" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="607.06" y1="15.24" x2="609.6" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="609.6" y1="15.24" x2="612.14" y2="15.24" width="0.1524" layer="91"/>
-<junction x="609.6" y="15.24"/>
-<label x="612.14" y="15.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="599.44" y1="5.08" x2="601.98" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="5.08" x2="604.52" y2="5.08" width="0.1524" layer="91"/>
+<junction x="601.98" y="5.08"/>
+<label x="604.52" y="5.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$6" gate="G$1" pin="D"/>
 <pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="609.6" y1="20.32" x2="609.6" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="601.98" y1="10.16" x2="601.98" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="609.6" y1="45.72" x2="617.22" y2="45.72" width="0.1524" layer="91"/>
-<label x="612.14" y="45.72" size="1.778" layer="95"/>
+<wire x1="601.98" y1="50.8" x2="609.6" y2="50.8" width="0.1524" layer="91"/>
+<label x="604.52" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="497.84" y1="66.04" x2="482.6" y2="66.04" width="0.1524" layer="91"/>
@@ -14574,6 +14955,11 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <wire x1="513.08" y1="53.34" x2="525.78" y2="53.34" width="0.1524" layer="91"/>
 <label x="513.08" y="53.34" size="1.778" layer="95"/>
 <pinref part="SV2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="DI"/>
+<wire x1="876.3" y1="162.56" x2="886.46" y2="162.56" width="0.1524" layer="91"/>
+<label x="876.3" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD4" class="0">
@@ -14666,11 +15052,11 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
 <pinref part="U$5" gate="G$1" pin="VIN"/>
-<wire x1="619.76" y1="182.88" x2="619.76" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="619.76" y1="203.2" x2="619.76" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="619.76" y1="180.34" x2="619.76" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="619.76" y1="180.34" x2="627.38" y2="180.34" width="0.1524" layer="91"/>
-<junction x="619.76" y="180.34"/>
+<wire x1="619.76" y1="200.66" x2="619.76" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="619.76" y1="200.66" x2="627.38" y2="200.66" width="0.1524" layer="91"/>
+<junction x="619.76" y="200.66"/>
 </segment>
 <segment>
 <pinref part="PS" gate="G$1" pin="1"/>
@@ -14682,110 +15068,121 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <wire x1="711.2" y1="20.32" x2="713.74" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="713.74" y1="20.32" x2="713.74" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<junction x="713.74" y="20.32"/>
 </segment>
 <segment>
-<wire x1="599.44" y1="20.32" x2="599.44" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="599.44" y1="30.48" x2="594.36" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="591.82" y1="10.16" x2="591.82" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="591.82" y1="20.32" x2="586.74" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="G"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<junction x="594.36" y="30.48"/>
+<junction x="586.74" y="20.32"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
-<wire x1="594.36" y1="30.48" x2="594.36" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="586.74" y1="20.32" x2="586.74" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="642.62" y1="20.32" x2="642.62" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="642.62" y1="30.48" x2="637.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="635" y1="10.16" x2="635" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="635" y1="20.32" x2="629.92" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="G"/>
 <pinref part="R23" gate="G$1" pin="2"/>
-<junction x="637.54" y="30.48"/>
+<junction x="629.92" y="20.32"/>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="637.54" y1="30.48" x2="637.54" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="20.32" x2="629.92" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_CON_0" class="0">
 <segment>
-<wire x1="662.94" y1="106.68" x2="645.16" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="665.48" y1="121.92" x2="647.7" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="PWM0"/>
-<label x="647.7" y="106.68" size="1.778" layer="95"/>
+<label x="650.24" y="121.92" size="1.778" layer="95"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM_CON_4" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM4"/>
-<wire x1="662.94" y1="96.52" x2="645.16" y2="96.52" width="0.1524" layer="91"/>
-<label x="647.7" y="96.52" size="1.778" layer="95"/>
+<label x="650.24" y="111.76" size="1.778" layer="95"/>
+<pinref part="JP11" gate="G$1" pin="1"/>
+<wire x1="647.7" y1="111.76" x2="683.26" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_CON_5" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM5"/>
-<wire x1="662.94" y1="93.98" x2="645.16" y2="93.98" width="0.1524" layer="91"/>
-<label x="647.7" y="93.98" size="1.778" layer="95"/>
+<label x="650.24" y="109.22" size="1.778" layer="95"/>
+<pinref part="JP15" gate="G$1" pin="1"/>
+<wire x1="647.7" y1="109.22" x2="693.42" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_CON_6" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM6"/>
-<wire x1="662.94" y1="91.44" x2="645.16" y2="91.44" width="0.1524" layer="91"/>
-<label x="647.7" y="91.44" size="1.778" layer="95"/>
+<wire x1="673.1" y1="106.68" x2="647.7" y2="106.68" width="0.1524" layer="91"/>
+<label x="650.24" y="106.68" size="1.778" layer="95"/>
+<pinref part="JP16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM_CON_7" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM7"/>
-<wire x1="662.94" y1="88.9" x2="645.16" y2="88.9" width="0.1524" layer="91"/>
-<label x="647.7" y="88.9" size="1.778" layer="95"/>
+<label x="650.24" y="104.14" size="1.778" layer="95"/>
+<pinref part="JP17" gate="G$1" pin="1"/>
+<wire x1="647.7" y1="104.14" x2="683.26" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_CON_8" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM8"/>
-<wire x1="662.94" y1="86.36" x2="645.16" y2="86.36" width="0.1524" layer="91"/>
-<label x="647.7" y="86.36" size="1.778" layer="95"/>
+<label x="650.24" y="101.6" size="1.778" layer="95"/>
+<pinref part="JP18" gate="G$1" pin="1"/>
+<wire x1="647.7" y1="101.6" x2="693.42" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_CON_9" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM9"/>
-<wire x1="662.94" y1="83.82" x2="645.16" y2="83.82" width="0.1524" layer="91"/>
-<label x="647.7" y="83.82" size="1.778" layer="95"/>
+<wire x1="673.1" y1="99.06" x2="647.7" y2="99.06" width="0.1524" layer="91"/>
+<label x="650.24" y="99.06" size="1.778" layer="95"/>
+<pinref part="JP19" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM_CON_10" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM10"/>
-<wire x1="665.48" y1="81.28" x2="645.16" y2="81.28" width="0.1524" layer="91"/>
-<label x="647.7" y="81.28" size="1.778" layer="95"/>
+<wire x1="683.26" y1="96.52" x2="647.7" y2="96.52" width="0.1524" layer="91"/>
+<label x="650.24" y="96.52" size="1.778" layer="95"/>
+<pinref part="JP20" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM_CON_11" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM11"/>
-<wire x1="665.48" y1="78.74" x2="645.16" y2="78.74" width="0.1524" layer="91"/>
-<label x="647.7" y="78.74" size="1.778" layer="95"/>
+<label x="650.24" y="93.98" size="1.778" layer="95"/>
+<pinref part="JP21" gate="G$1" pin="1"/>
+<wire x1="647.7" y1="93.98" x2="693.42" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="#OE"/>
-<wire x1="604.52" y1="93.98" x2="591.82" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="607.06" y1="109.22" x2="594.36" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="591.82" y1="93.98" x2="591.82" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="594.36" y1="109.22" x2="594.36" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_CON_12" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM12"/>
-<wire x1="645.16" y1="76.2" x2="665.48" y2="76.2" width="0.1524" layer="91"/>
-<label x="647.7" y="76.2" size="1.778" layer="95"/>
+<wire x1="647.7" y1="91.44" x2="673.1" y2="91.44" width="0.1524" layer="91"/>
+<label x="650.24" y="91.44" size="1.778" layer="95"/>
+<pinref part="JP22" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SDA_PI" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="SDA"/>
-<wire x1="591.82" y1="101.6" x2="604.52" y2="101.6" width="0.1524" layer="91"/>
-<label x="591.82" y="101.6" size="1.778" layer="95"/>
+<wire x1="594.36" y1="116.84" x2="607.06" y2="116.84" width="0.1524" layer="91"/>
+<label x="594.36" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO2"/>
@@ -14794,21 +15191,21 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="SDA"/>
-<wire x1="604.52" y1="157.48" x2="591.82" y2="157.48" width="0.1524" layer="91"/>
-<label x="591.82" y="157.48" size="1.778" layer="95"/>
+<wire x1="604.52" y1="177.8" x2="591.82" y2="177.8" width="0.1524" layer="91"/>
+<label x="591.82" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="640.08" y1="15.24" x2="637.54" y2="15.24" width="0.1524" layer="91"/>
-<junction x="637.54" y="15.24"/>
-<wire x1="637.54" y1="15.24" x2="635" y2="15.24" width="0.1524" layer="91"/>
-<label x="635" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="632.46" y1="5.08" x2="629.92" y2="5.08" width="0.1524" layer="91"/>
+<junction x="629.92" y="5.08"/>
+<wire x1="629.92" y1="5.08" x2="627.38" y2="5.08" width="0.1524" layer="91"/>
+<label x="627.38" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$7" gate="G$1" pin="S"/>
 <pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="637.54" y1="15.24" x2="637.54" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="629.92" y1="5.08" x2="629.92" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="642.62" y1="45.72" x2="629.92" y2="45.72" width="0.1524" layer="91"/>
-<label x="632.46" y="45.72" size="1.778" layer="95"/>
+<wire x1="635" y1="50.8" x2="622.3" y2="50.8" width="0.1524" layer="91"/>
+<label x="624.84" y="50.8" size="1.778" layer="95"/>
 <pinref part="R25" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -14820,8 +15217,8 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <net name="SCL_PI" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="SCL"/>
-<wire x1="604.52" y1="99.06" x2="591.82" y2="99.06" width="0.1524" layer="91"/>
-<label x="591.82" y="99.06" size="1.778" layer="95"/>
+<wire x1="607.06" y1="114.3" x2="594.36" y2="114.3" width="0.1524" layer="91"/>
+<label x="594.36" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GPIO3"/>
@@ -14830,21 +15227,21 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="SCL"/>
-<wire x1="604.52" y1="152.4" x2="591.82" y2="152.4" width="0.1524" layer="91"/>
-<label x="591.82" y="152.4" size="1.778" layer="95"/>
+<wire x1="604.52" y1="172.72" x2="591.82" y2="172.72" width="0.1524" layer="91"/>
+<label x="591.82" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="596.9" y1="15.24" x2="594.36" y2="15.24" width="0.1524" layer="91"/>
-<junction x="594.36" y="15.24"/>
-<wire x1="594.36" y1="15.24" x2="591.82" y2="15.24" width="0.1524" layer="91"/>
-<label x="591.82" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="589.28" y1="5.08" x2="586.74" y2="5.08" width="0.1524" layer="91"/>
+<junction x="586.74" y="5.08"/>
+<wire x1="586.74" y1="5.08" x2="584.2" y2="5.08" width="0.1524" layer="91"/>
+<label x="584.2" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$6" gate="G$1" pin="S"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="594.36" y1="15.24" x2="594.36" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="586.74" y1="5.08" x2="586.74" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="586.74" y1="45.72" x2="599.44" y2="45.72" width="0.1524" layer="91"/>
-<label x="589.28" y="45.72" size="1.778" layer="95"/>
+<wire x1="579.12" y1="50.8" x2="591.82" y2="50.8" width="0.1524" layer="91"/>
+<label x="581.66" y="50.8" size="1.778" layer="95"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -14856,45 +15253,25 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <net name="PWM_CON_1" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM1"/>
-<wire x1="673.1" y1="104.14" x2="645.16" y2="104.14" width="0.1524" layer="91"/>
-<label x="647.7" y="104.14" size="1.778" layer="95"/>
+<wire x1="675.64" y1="119.38" x2="647.7" y2="119.38" width="0.1524" layer="91"/>
+<label x="650.24" y="119.38" size="1.778" layer="95"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PWM_CON_2" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM2"/>
-<label x="647.7" y="101.6" size="1.778" layer="95"/>
+<label x="650.24" y="116.84" size="1.778" layer="95"/>
 <pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="683.26" y1="101.6" x2="645.16" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="685.8" y1="116.84" x2="647.7" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_CON_3" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PWM3"/>
-<wire x1="662.94" y1="99.06" x2="645.16" y2="99.06" width="0.1524" layer="91"/>
-<label x="647.7" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PWM_CON_13" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="PWM13"/>
-<wire x1="645.16" y1="73.66" x2="665.48" y2="73.66" width="0.1524" layer="91"/>
-<label x="647.7" y="73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PWM_CON_14" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="PWM14"/>
-<wire x1="645.16" y1="71.12" x2="665.48" y2="71.12" width="0.1524" layer="91"/>
-<label x="647.7" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PWM_CON_15" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="PWM15"/>
-<wire x1="645.16" y1="68.58" x2="665.48" y2="68.58" width="0.1524" layer="91"/>
-<label x="647.7" y="68.58" size="1.778" layer="95"/>
+<wire x1="673.1" y1="114.3" x2="647.7" y2="114.3" width="0.1524" layer="91"/>
+<label x="650.24" y="114.3" size="1.778" layer="95"/>
+<pinref part="JP10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -14910,6 +15287,61 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <junction x="721.36" y="53.34"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 <junction x="721.36" y="58.42"/>
+</segment>
+</net>
+<net name="PWM_CON_13" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PWM13"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<wire x1="647.7" y1="88.9" x2="683.26" y2="88.9" width="0.1524" layer="91"/>
+<label x="650.24" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_CON_14" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PWM14"/>
+<pinref part="JP8" gate="G$1" pin="1"/>
+<wire x1="647.7" y1="86.36" x2="693.42" y2="86.36" width="0.1524" layer="91"/>
+<label x="650.24" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_CON_15" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PWM15"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
+<wire x1="647.7" y1="83.82" x2="673.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="650.24" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OUT1" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="DO"/>
+<wire x1="924.56" y1="162.56" x2="911.86" y2="162.56" width="0.1524" layer="91"/>
+<label x="919.48" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="DI"/>
+<wire x1="932.18" y1="162.56" x2="942.34" y2="162.56" width="0.1524" layer="91"/>
+<label x="932.18" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OUT2" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="DO"/>
+<wire x1="980.44" y1="162.56" x2="967.74" y2="162.56" width="0.1524" layer="91"/>
+<label x="975.36" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="DI"/>
+<wire x1="988.06" y1="162.56" x2="998.22" y2="162.56" width="0.1524" layer="91"/>
+<label x="988.06" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OUT3" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="DO"/>
+<wire x1="1036.32" y1="162.56" x2="1023.62" y2="162.56" width="0.1524" layer="91"/>
+<label x="1031.24" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
