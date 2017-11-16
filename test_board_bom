@@ -1,0 +1,116 @@
+Partlist
+
+Exported from 3_ESC_BOARD.brd at 11/16/17 6:51 PM
+
+EAGLE Version 8.3.2 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part       Value                    Package              Library                     Position (mil)        Orientation
+
+12V-TO-5V  LM340MPX-5.0/NOPBMP04A-M MP04A-M              12v_to_5v_linreg            (3099.33071 2108.46457) R0
+C1         0.1uF                    0603                 SparkFun-Capacitors         (2725.75591 490.43307) R90
+C2         0.1uF                    0603                 SparkFun-Capacitors         (2721.80315 1390.43307) R90
+C3         0.1uF                    0603                 SparkFun-Capacitors         (2712.85039 2280.43307) R90
+C4         0.1uF                    0603                 SparkFun-Capacitors         (2675.82677 303.62205) R0
+C5         0.1uF                    0603                 SparkFun-Capacitors         (2643.38583 1172.44094) R270
+C6         0.1uF                    0603                 SparkFun-Capacitors         (2641.84252 2064.98425) R270
+C7         0.1uF                    0603                 SparkFun-Capacitors         (1289.56693 2266.10236) MR180
+C8         0.1uF                    0603                 SparkFun-Capacitors         (1289.56693 1330.05512) MR180
+C9         0.1uF                    0603                 SparkFun-Capacitors         (1289.56693 439.00787) MR180
+C10        0.1uF                    0603                 SparkFun-Capacitors         (3302.91339 1823.55906) R0
+C11        0.1uF                    C0603                rcl                         (2965.59843 1128.66929) R270
+C12        0.1uF                    C0603                rcl                         (3209.88189 683.38583) MR0
+C13        0.1uF                    C0603                rcl                         (3209.88189 596.77165) MR0
+C14        0.1uF                    C0603                rcl                         (3601.73228 661.14173) MR180
+C15        0.1uF                    C0603                rcl                         (3601.73228 567.75591) MR180
+C16        22pF                     C0603                rcl                         (3090.98425 809.68504) MR180
+C17        22pF                     C0603                rcl                         (3203.62205 441.92913) MR270
+C18        330uF                    CPOL-US(10.3_10.3MM) PowerComponents             (2251.9685 484.25197) R0
+C19        330uF                    CPOL-US(10.3_10.3MM) PowerComponents             (2251.9685 1385.82677) R0
+C20        330uF                    CPOL-US(10.3_10.3MM) PowerComponents             (2251.9685 2277.95276) R0
+C21        0.1uF                    0603                 SparkFun-Capacitors         (1994.07087 585.44094) R270
+C22        0.1uF                    0603                 SparkFun-Capacitors         (1993.58268 1485.94488) R270
+C23        0.1uF                    0603                 SparkFun-Capacitors         (1997.55906 2368.38583) R270
+C24        0.1u                     0603-CAP             SparkFun-Passives           (3725 2430)           R90
+C25        0.1uF                    0603                 SparkFun-Capacitors         (3705 1295)           R180
+C26        0.1uF                    0603                 SparkFun-Capacitors         (4020 1330)           R0
+C27        0.1uF                    0603                 SparkFun-Capacitors         (2870 2085)           R270
+C28        10uF                     0603-CAP             SparkFun-Capacitors         (4225 730)            MR0
+C29        0.1uF                    0603                 SparkFun-Capacitors         (3030 2240)           MR0
+C30        10uF                     0603                 SparkFun-Capacitors         (3030 2150)           MR0
+C31        0.1uF                    C0603                rcl                         (2780 1170)           R90
+C32        0.1uF                    C0603                rcl                         (2110 1055)           R90
+C33        0.1uF                    C0603                rcl                         (2500 1090)           R0
+ESC1       AFRO_20A_ESC             AFRO_20A_ESC         afro_20A_esc                (1167.71654 440.55118) R0
+ESC1_CON   3PINCONNECTOR            3PINCONNECTOR        afro_20A_esc                (181.10236 433.07087) R270
+ESC2       AFRO_20A_ESC             AFRO_20A_ESC         afro_20A_esc                (1167.71654 1340.55118) R0
+ESC2_CON   3PINCONNECTOR            3PINCONNECTOR        afro_20A_esc                (181.10236 1334.64567) R270
+ESC3       AFRO_20A_ESC             AFRO_20A_ESC         afro_20A_esc                (1167.71654 2240.55118) R0
+ESC3_CON   3PINCONNECTOR            3PINCONNECTOR        afro_20A_esc                (181.10236 2240.15748) R270
+J1                                  BANANA_CONN          SparkFun-Connectors         (3205.90551 2443.26772) R90
+J2                                  BANANA_CONN          SparkFun-Connectors         (2904.48819 2446.61417) R90
+J3         AVR_SPI_PROG_3X2NS       2X3-NS               SparkFun-Connectors         (3775.35433 560.47244) R90
+J5                                  1X03                 SparkFun-Connectors         (4235 1530)           R270
+JP1                                 1X01                 pinhead                     (2945 1895.47244)     R0
+JP2                                 1X01                 pinhead                     (2947.00787 1793.38583) R0
+JP3                                 1X01                 pinhead                     (2946.65354 1694.33071) R0
+JP4                                 1X01                 pinhead                     (2947.20472 1592.28346) R0
+JP5                                 1X01                 pinhead                     (2947.87402 1490.86614) R0
+JP6                                 1X01                 pinhead                     (2949.17323 1390.94488) R0
+JP7                                 1X01                 pinhead                     (4300 275)            MR0
+JP8                                 1X01                 pinhead                     (4305 175)            R0
+JP9                                 1X01                 pinhead                     (4200 175)            R0
+JP10                                1X01                 pinhead                     (3955 635)            R0
+JP11                                1X01                 pinhead                     (3955 515)            R0
+JP12                                1X01                 pinhead                     (3448.54331 1850.55118) R0
+JP13                                1X01                 pinhead                     (3413.97638 2126.85039) R0
+JP14                                1X01                 pinhead                     (3418.97638 2229.48819) R0
+JP15                                1X01                 pinhead                     (3955 415)            R0
+JP16                                1X01                 pinhead                     (4200 275)            R0
+JP17                                1X01                 pinhead                     (4100 175)            R0
+JP18                                1X01                 pinhead                     (4300 75)             R0
+JP19                                1X01                 pinhead                     (4200 75)             R0
+JP20                                1X01                 pinhead                     (4100 75)             R0
+JP21                                1X01                 pinhead                     (4000 75)             R0
+JP22                                1X01                 pinhead                     (3900 75)             R0
+LED1       WS2812B5050              WS2812B              microbuilder                (2860 950)            R180
+LED2       WS2812B5050              WS2812B              microbuilder                (2585 950)            R180
+LED3       WS2812B5050              WS2812B              microbuilder                (2295 955)            R180
+PCB1       RPI2                     RPI2                 MicrocontrollerComponents   (6565 50)             R90
+PS         DF13-4P-1.25DSA          DF13-4P-1.25DSA      con-hirose-df13             (3935 1515)           MR0
+PWM_HEADER                          MA04-1               con-lstb                    (2845.47244 90)       R0
+R1         1k                       0603                 SparkFun-Resistors          (2543.0315 1243.30709) R270
+R2         1k                       0603                 SparkFun-Resistors          (2542.43307 343.92126) R270
+R3         1k                       0603                 SparkFun-Resistors          (2542.00787 2135.3937) R270
+R4                                  R0603                rcl                         (1288.66142 2268.34646) R0
+R5                                  R0603                rcl                         (1148.30709 2268.74016) R0
+R6                                  R0603                rcl                         (1287.51969 1339.44882) R0
+R7                                  R0603                rcl                         (1130.70866 1339.44882) R0
+R8                                  R0603                rcl                         (1290.7874 447.08661) R0
+R9                                  R0603                rcl                         (1128.93701 446.81102) R0
+R10                                 0603                 SparkFun-Resistors          (3052.34904 1128.66929) R90
+R15        10k                      0603-RES             SparkFun-Resistors          (4260 570)            MR90
+R16        0R                       0603-RES             SparkFun-Resistors          (3930 205)            R0
+R17        0R                       0603-RES             SparkFun-Resistors          (3935 270)            R0
+R18        0R                       0603-RES             SparkFun-Resistors          (3935 335)            R0
+R19        0R                       0603-RES             SparkFun-Passives           (4345 1430)           MR180
+R21        10k                      R0603                rcl                         (4015 965)            MR90
+R22        10k                      R0603                rcl                         (3808.46457 1055)     MR0
+R23        10k                      R0603                rcl                         (4275 1081.53543)     MR90
+R24        10k                      R0603                rcl                         (4020 1111.53543)     MR90
+R25        0R                       0603-RES             SparkFun-Passives           (4150 970)            MR0
+R26        0R                       0603-RES             SparkFun-Passives           (3910 850)            MR0
+RESET                               SW_2512              DiscreteComponents          (3180.98425 1071.49606) R270
+SV2                                 FE06-2               con-lsta                    (3435 130)            R0
+U$1        ACS711                   ACS711               ACS711_ameter               (2567.79528 575.82677) R270
+U$2        ACS711                   ACS711               ACS711_ameter               (2566.92913 1479.48819) R270
+U$3        ACS711                   ACS711               ACS711_ameter               (2566.49606 2367.71654) R270
+U$4        MCP3008                  MCP3008              MCP3008                     (3166.85039 1575.82677) R270
+U$5        BNO055_9DOF_BREAKOUT     BNO055               Other                       (3900 2200)           R0
+U$6        BSS138                   BSS138               BSS138                      (3895 965)            MR270
+U$7        BSS138                   BSS138               BSS138                      (4150 1080)           MR270
+U$8        AP2210                   SOT-23-3             PowerComponents             (3905 1260)           R90
+U2         ATMEGA328P_TQFP          TQFP32-08            SparkFun-IC-Microcontroller (3409.5748 665.06299) R0
+U4         PCA9685                  TSSOP28              microbuilder                (4145 570)            R270
+Y2                                  HC49US               SparkFun-Clocks             (3067.79528 570.7874) R90
